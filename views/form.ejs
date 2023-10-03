@@ -1,0 +1,30 @@
+<%- include('head') %>
+<%- include('header') %>
+
+<h2>Bli medlem</h2>
+<p>Bli medlem genom att fylla i formuläret nedan. Alla fält måste fyllas i.</p><br>
+<div class="formWrapper">
+    <form action="/form" method="post">
+        <label for="name">Namn:</label>
+        <input type="text" id="name" name="name" required ><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phoneNumber">Telefonnummer:</label>
+        <input type="number" id="phoneNumber" name="phoneNumber" required><br>
+
+        <label for="city">Stad:</label>
+        <input type="text" id="city" name="city" required><br>
+
+        <label for="date">Datum:</label>
+        <input type="date" id="date" name="date" required><br>
+    
+        <br>
+    
+        <button>Bli medlem</button>
+    </form>
+</div>
+
+    
+<%- include('footer') %>

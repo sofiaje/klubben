@@ -1,0 +1,39 @@
+header{
+    box-shadow: 0 0 10px 5px rgb(182, 182, 182);
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+    nav{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    a {
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+        color: black;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.important{
+    background-color: rgb(75, 103, 75);
+    border-radius: 4px;
+    color:white;
+    padding:0.5rem;
+    &:hover {
+        background-color: rgb(98, 132, 98);
+
+    }
+}
+
+#headerWrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+

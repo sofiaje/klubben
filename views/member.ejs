@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klubben</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <script src="../script.js" defer></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/4d42e0c674.js" crossorigin="anonymous"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Crimson+Pro:wght@200;300&family=Crimson+Text&family=Roboto:wght@300;400;500&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<%- include('header') %>
+
+
+        <h1><%= name %></h1>
+        <p><%= email %><br>
+        <%= phoneNumber %><br>
+        <%= city %><br>
+        Blev medlem: <%= date %></p><br><br>
+
+
+        <button class="btn" id="changeInfo">Ändra info</button>
+
+        <form action="/remove" method="POST">
+            <input type="hidden" name="userId" value="<%= _id %>">
+            <button type="submit" class="btn">Ta bort medlem</button>
+        </form>
+
+        
+        <div id="changeInfoForm" class="hidden">
+            <div class="formWrapper">
+                <form action="/update" method="post">
+                    <label for="name">Namn:</label>
+                    <input type="text" id="name" name="name" value="<%= name %>" required ><br>
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="<%= email %>"required><br>
+            
+                    <label for="phoneNumber">Telefonnummer:</label>
+                    <input type="number" id="phoneNumber" name="phoneNumber" value="<%= phoneNumber  %>" required><br>
+            
+                    <label for="city">Stad:</label>
+                    <input type="text" id="city" name="city" value="<%= city %>" required><br>
+            
+                    <input type="hidden" name="userId" value="<%= _id %>">
+
+                    <br>
+                
+                    <button class="btn">Uppdatera</button>
+                </form>
+            </div>
+        </div>
+
+
+        <a href="/members"><i class="fa-solid fa-arrow-left"></i> Back to members list</a>
+
+<%- include('footer') %>
+    

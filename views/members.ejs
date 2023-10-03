@@ -1,0 +1,33 @@
+<%- include('head') %>
+<%- include('header') %>
+
+
+
+    <h1>Medlemsregister</h1>
+    
+    <% if (members.length === 0) { %>
+        <p>Det finns inga medlemmar ännu</p>
+    <% } else { %>
+        <form action="/members" method="get">
+            <select name="sort" id="sort">
+                <option value="">sortera</option>
+                <option value="asc">a till ö</option>
+                <option value="desc">ö till a</option>
+            </select>
+            <button class="btn">Sortera</button>
+        </form>
+
+
+        <h2>Medlemmar</h2>
+        <ul>
+            <% members.forEach(member => { %>
+                <li>
+                    <a href="/member/<%= member._id %>">
+                        <%= member.name %>
+                    </a>
+                </li>
+            <% }) %>
+        </ul>
+    <% } %>
+
+<%- include('footer') %>

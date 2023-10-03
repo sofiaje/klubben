@@ -1,0 +1,33 @@
+ul {
+    list-style: none;
+}
+label {
+    margin-bottom: 0.1rem;
+}
+input {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: 1px solid;
+    &:focus {
+        outline-color: rgb(197, 140, 15);
+
+    }
+}
+
+form {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.btn{
+    align-self: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+select {
+    padding: 0.2rem 1rem 0.2rem 0.2rem;
+    margin: 1rem 0;
+}

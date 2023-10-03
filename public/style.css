@@ -1,0 +1,203 @@
+* {
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: 100;
+  padding: 0.5rem 0;
+  color: rgb(87, 100, 87);
+}
+
+p {
+  padding: 0.5rem 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: rgb(128, 144, 128);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+}
+button:hover {
+  background-color: rgb(96, 109, 96);
+  box-shadow: 0 0 10px rgb(194, 194, 194);
+}
+
+.firstPageHeading {
+  font-size: 3rem;
+}
+
+footer p {
+  font-size: 0.8rem;
+}
+
+.firstPageDiv h2 {
+  font-size: 1.1rem;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+label {
+  margin-bottom: 0.1rem;
+}
+
+input {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid;
+}
+input:focus {
+  outline-color: rgb(197, 140, 15);
+}
+
+form {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  align-self: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+select {
+  padding: 0.2rem 1rem 0.2rem 0.2rem;
+  margin: 1rem 0;
+}
+
+header {
+  box-shadow: 0 0 10px 5px rgb(182, 182, 182);
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+header nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+header h1 {
+  font-size: 1.5rem;
+}
+
+.important {
+  background-color: rgb(75, 103, 75);
+  border-radius: 4px;
+  color: white;
+  padding: 0.5rem;
+}
+.important:hover {
+  background-color: rgb(98, 132, 98);
+}
+
+#headerWrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: rgb(87, 100, 87);
+  color: white;
+  padding: 1rem;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  color: rgb(197, 140, 15);
+}
+
+#footerWrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#footerWrapper h2 {
+  font-size: 1rem;
+  color: white;
+}
+#footerWrapper section {
+  min-width: 200px;
+}
+@media (width >= 500px) {
+  #footerWrapper section {
+    max-width: 30%;
+  }
+}
+@media (width >= 700px) {
+  #footerWrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  background-color: rgb(255, 255, 255);
+}
+
+#pageWrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#contentWrapper {
+  flex-grow: 1;
+  padding: 1rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex {
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.firstPageDiv {
+  max-width: 600px;
+  margin: 2rem auto;
+  margin-bottom: 4rem;
+}
+.firstPageDiv h2 {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}/*# sourceMappingURL=style.css.map */

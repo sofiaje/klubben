@@ -1,0 +1,49 @@
+@import "partials/text";
+@import "partials/form";
+@import "partials/header";
+@import "partials/footer";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Lucida Sans', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    background-color: rgb(255, 255, 255);
+}
+
+#pageWrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#contentWrapper{
+    flex-grow: 1;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+.flex {
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+.firstPageDiv{
+    max-width: 600px;
+    margin: 2rem auto;
+    margin-bottom: 4rem;
+    h2 {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+}

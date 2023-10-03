@@ -1,0 +1,48 @@
+* {
+    line-height: 1.5;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+    padding: 0.5rem 0;
+    color: rgb(87, 100, 87);
+
+    
+}
+p {
+    padding: 0.5rem 0;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+button {
+    cursor: pointer;
+    background-color: rgb(128, 144, 128);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    &:hover {
+        background-color: rgb(96, 109, 96);
+        box-shadow: 0 0 10px rgb(194, 194, 194);
+    }
+}
+
+.firstPageHeading {
+    font-size: 3rem;
+}
+footer {
+    p {
+        font-size: 0.8rem;
+    }
+}
+.firstPageDiv{ 
+    h2 {
+        font-size: 1.1rem;
+        padding: 0;
+    }
+}
